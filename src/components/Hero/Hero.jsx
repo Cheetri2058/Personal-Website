@@ -28,8 +28,9 @@ const Hero = () => {
           <div className="hero-image-container">
             <img 
               src={profilePhoto} 
-              alt="Arbin Budhathoki" 
+              alt="Arbin Budhathoki - Software Engineer" 
               className="hero-image"
+              loading="lazy"
               onError={(e) => {
                 // Fallback if image doesn't exist
                 e.target.style.display = 'none'

@@ -161,23 +161,43 @@ Edit the `skillCategories` array in `src/components/Skills/Skills.jsx`:
 
 ### GitHub Pages
 
-1. Install `gh-pages`:
-   ```bash
-   npm install --save-dev gh-pages
-   ```
+The project is already configured for GitHub Pages deployment!
 
-2. Add to `package.json`:
-   ```json
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-   }
-   ```
+1. **If deploying to user/organization page** (e.g., `username.github.io`):
+   - Repository name should be: `username.github.io` (replace `username` with your GitHub username)
+   - The base path is already set to `/` by default
+   - Skip to step 3
 
-3. Deploy:
+2. **If deploying to project page** (e.g., `username.github.io/repository-name`):
+   - Create a `.env` file in the root directory:
+     ```
+     VITE_BASE_PATH=/repository-name/
+     ```
+   - Replace `repository-name` with your actual repository name
+   - Make sure the path starts and ends with `/`
+
+3. **Deploy to GitHub Pages**:
    ```bash
    npm run deploy
    ```
+   This will:
+   - Build your project
+   - Create/update the `gh-pages` branch
+   - Push the build to GitHub
+
+4. **Configure GitHub Pages in repository settings**:
+   - Go to your repository on GitHub
+   - Navigate to **Settings** → **Pages**
+   - Under **Source**, select **Deploy from a branch**
+   - Select branch: **gh-pages**
+   - Select folder: **/ (root)**
+   - Click **Save**
+
+5. **Your site will be live at**:
+   - User page: `https://username.github.io`
+   - Project page: `https://username.github.io/repository-name`
+
+**Note**: After deployment, it may take a few minutes for GitHub Pages to update. Clear your browser cache if you don't see changes immediately.
 
 ### Netlify
 
