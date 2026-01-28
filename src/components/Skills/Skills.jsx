@@ -4,20 +4,28 @@ import './Skills.css'
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Programming & Development',
-      skills: ['Python', 'Java', 'JavaScript', 'SQL', 'HTML & CSS']
+      title: 'Programming Languages',
+      skills: ['Python (Pandas/NumPy)', 'Java', 'SQL (MySQL, SQL Server)', 'JavaScript', 'TypeScript', 'Kotlin', 'C++', 'Bash', 'PowerShell', 'HTML/CSS']
     },
     {
-      title: 'Systems & IT',
-      skills: ['Windows & Linux fundamentals', 'Networking basics', 'System troubleshooting', 'Hardware & software support']
+      title: 'IT & Systems',
+      skills: ['Windows', 'Linux (Ubuntu)', 'Active Directory', 'DNS', 'DHCP', 'TCP/IP', 'VPN', 'R-Desktop', 'GoTo Resolve', 'Team Dynamix']
     },
     {
-      title: 'Tools & Technologies',
-      skills: ['Git & GitHub', 'VS Code', 'Command Line', 'Basic cloud concepts']
+      title: 'Networking & Support',
+      skills: ['Tier 1 Troubleshooting', 'Hardware/Software Support', 'AV Systems', 'IP Devices', 'Ticketing Systems', 'Network Topology']
     },
     {
-      title: 'Strengths',
-      skills: ['Problem-solving', 'Clear communication', 'Fast learner', 'Attention to detail']
+      title: 'Data & Visualization Tools',
+      skills: ['Tableau', 'Power BI', 'Excel (XLOOKUP, VLOOKUP, Pivot Tables, Power Query)', 'AWS (S3, Athena)']
+    },
+    {
+      title: 'Development Tools',
+      skills: ['VS Code', 'Visual Studio', 'Android Studio', 'Git', 'Django', 'React', 'TypeScript']
+    },
+    {
+      title: 'Concepts & Architecture',
+      skills: ['Database Design & Queries', 'Data Analytics', 'Data Structures & Algorithms', 'MVVM Architecture', 'Cybersecurity Fundamentals', 'Software Testing']
     }
   ]
 

@@ -54,6 +54,12 @@
     font-weight: 500;
 }
 
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .project-link {
     color: var(--primary-color);
     text-decoration: none;

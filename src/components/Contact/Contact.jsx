@@ -5,19 +5,30 @@ const Contact = () => {
   const contactLinks = [
     {
       icon: '📧',
-      text: 'arbin.budhathoki@email.com',
-      href: 'mailto:arbin.budhathoki@email.com'
+      text: 'arbinbudhathoki18096@gmail.com',
+      href: 'mailto:arbinbudhathoki18096@gmail.com'
+    },
+    {
+      icon: '📱',
+      text: '(210)-895-9066',
+      href: 'tel:+12108959066'
     },
     {
       icon: '🔗',
       text: 'LinkedIn',
-      href: 'https://linkedin.com/in/arbinbudhathoki',
+      href: 'https://www.linkedin.com/in/budhathokiarbin/',
+      external: true
+    },
+    {
+      icon: '🌐',
+      text: 'Website',
+      href: 'https://www.arbinbudhathoki.com.np/',
       external: true
     },
     {
       icon: '💻',
       text: 'GitHub',
-      href: 'https://github.com/arbinbudhathoki',
+      href: 'https://github.com/Cheetri2058',
       external: true
     }
   ]
@@ -29,7 +40,7 @@ const Contact = () => {
         <div className="contact-content">
           <p className="contact-intro">Let's connect.</p>
           <p className="contact-description">
-            I'm open to full-time, entry-level opportunities in software engineering, IT support, or systems engineering.
+            I'm open to full-time opportunities in data analytics, software engineering, and IT infrastructure. Let's connect and discuss how I can contribute to your team.
           </p>
           <div className="contact-links">
             {contactLinks.map((link, index) => (

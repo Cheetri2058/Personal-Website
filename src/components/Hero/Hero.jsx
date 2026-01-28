@@ -39,10 +39,10 @@ const Hero = () => {
           </div>
           <div className="hero-content">
             <h1 className="hero-headline">
-              Hi, I'm <span className="highlight">Arbin Budhathoki</span> — a Computer Science graduate building reliable software and systems.
+              Greetings, my name is <span className="highlight">Arbin Budhathoki</span>. I am a Computer Science graduate (Cum Laude) dedicated to bridging the gap between complex IT infrastructure and actionable data insights. With a technical toolkit featuring SQL, Python, and Java, I specialize in building robust data pipelines and interactive dashboards that transform raw information into strategic decisions.
             </h1>
             <p className="hero-subheadline">
-              I focus on solving real-world problems through clean code, strong fundamentals, and a continuous learning mindset. I'm actively seeking entry-level software, IT, or systems engineering roles.
+              I'm actively seeking opportunities where I can leverage my technical expertise and problem-solving skills to drive impactful solutions.
             </p>
             <div className="hero-cta">
               <a href="#projects" className="btn btn-primary" onClick={(e) => { e.preventDefault(); scrollToSection('#projects') }}>

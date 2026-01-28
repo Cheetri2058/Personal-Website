@@ -4,21 +4,34 @@ import './Projects.css'
 const Projects = () => {
   const projects = [
     {
-      title: 'Student Management System',
-      description: 'Developed a console-based application to manage student records, including adding, updating, and retrieving data efficiently. Focused on clean code structure and data validation.',
-      technologies: ['Java', 'OOP'],
+      title: 'NKU Find It - Campus Lost & Found Web App',
+      description: 'Built a full-stack web app to report, search, and claim lost items across campus. Developed a React + TypeScript frontend with search and filter functionality. Implemented a Django backend with SQL database for item management and claims.',
+      technologies: ['React', 'TypeScript', 'Django', 'SQL'],
       githubLink: '#'
     },
     {
-      title: 'Portfolio Website',
-      description: 'Designed and built a responsive personal portfolio website to showcase projects, skills, and experience. Focused on clean UI, accessibility, and performance.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+      title: 'Seattle Airbnb Pricing & Revenue Dashboard',
+      description: 'Uncovered seasonal revenue trends and property performance metrics to identify high-growth investment opportunities. Cleaned and joined datasets using Python; managed cloud storage and SQL querying via Amazon S3 and Athena.',
+      technologies: ['Tableau', 'Python', 'AWS', 'SQL'],
+      githubLink: '#',
+      tableauLink: 'https://public.tableau.com/app/profile/arbin.budhathoki/viz/AirBnBFullProject_17667062010280/Dashboard1?publish=yes'
+    },
+    {
+      title: 'Global Layoffs Data Cleaning Pipeline',
+      description: 'Automated the removal of duplicates and standardized null values, resulting in a 100% analysis-ready dataset. Applied advanced SQL techniques, including CTEs and Window Functions, to transform raw data.',
+      technologies: ['MySQL', 'Excel', 'AWS', 'SQL'],
       githubLink: '#'
     },
     {
-      title: 'Data Analysis Mini Project',
-      description: 'Worked with structured datasets to extract insights, clean data, and present results in a clear and readable format.',
-      technologies: ['Python', 'SQL'],
+      title: 'NKU Housing Finder - Android Application',
+      description: 'Built mobile app using MVVM architecture, LiveData, and ViewModel for efficient data handling and UI updates. Integrated housing filters, roommate matching criteria, and interactive UI components for 15,000+ potential students.',
+      technologies: ['Kotlin', 'Android', 'MVVM', 'LiveData'],
+      githubLink: '#'
+    },
+    {
+      title: 'Network Topology - Network Topology Mapper',
+      description: 'Led team in designing optimized network topology for multi-branch data flow, ensuring adherence to best practices and standards. Provided technical guidance and fostered collaboration to overcome challenges and complete project on time.',
+      technologies: ['Network Design', 'TCP/IP', 'System Architecture'],
       githubLink: '#'
     }
   ]
@@ -37,14 +50,28 @@ const Projects = () => {
                   <span key={techIndex} className="tech-tag">{tech}</span>
                 ))}
               </div>
-              <a 
-                href={project.githubLink} 
-                className="project-link" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                GitHub →
-              </a>
+              <div className="project-links">
+                {project.tableauLink && (
+                  <a 
+                    href={project.tableauLink} 
+                    className="project-link" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    View Dashboard →
+                  </a>
+                )}
+                {project.githubLink && project.githubLink !== '#' && (
+                  <a 
+                    href={project.githubLink} 
+                    className="project-link" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    GitHub →
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>

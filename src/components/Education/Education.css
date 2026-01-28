@@ -3,32 +3,137 @@
 }
 
 .education-content {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .education-item {
     background-color: var(--bg-secondary);
     padding: 2.5rem;
     border-radius: 12px;
-    text-align: center;
+    text-align: left;
     box-shadow: var(--shadow-sm);
 }
 
 .education-degree {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: var(--text-primary);
 }
 
-.education-school {
-    font-size: 1.25rem;
+.education-minor {
+    font-size: 1.1rem;
     color: var(--text-secondary);
     margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.education-school {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.education-gpa {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .education-date {
     font-size: 1rem;
     color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.education-coursework {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.coursework-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.coursework-list {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.honors-section {
+    margin-top: 1rem;
+}
+
+.honors-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.honor-item {
+    padding: 1.5rem;
+    background-color: var(--bg-primary);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.honor-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.honor-org {
+    font-size: 1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.honor-period {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
+.honor-description {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.certificate-container {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+}
+
+.certificate-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    border: 2px solid var(--border-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.certificate-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
 }

@@ -8,13 +8,13 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <p>
-            I'm a Computer Science graduate with a strong interest in software engineering, IT systems, and problem-solving. I enjoy working at the intersection of technology and practical impact—building, maintaining, and improving systems that people rely on every day.
+            Computer Science graduate (Cum Laude) with hands-on IT support experience in live production environments and full-stack development projects. Proficient in troubleshooting networking issues, database management, and mobile/web app development using Kotlin, React, Django, and SQL.
           </p>
           <p>
-            Through my academic projects and hands-on experience, I've developed a solid foundation in programming, debugging, system troubleshooting, and collaborative development. I'm comfortable learning new tools quickly and adapting to new environments.
+            Specialized training in data analytics with proven ability to build data pipelines and interactive dashboards that drive decision-making. Experienced in providing Tier 1 IT support for live events, managing AV systems, and resolving hardware/software issues in high-pressure production environments.
           </p>
           <p>
-            I'm currently on OPT and seeking opportunities where I can contribute, grow professionally, and build long-term value for a team.
+            I bridge the gap between complex IT infrastructure and actionable data insights, specializing in building robust data pipelines, interactive dashboards, and full-stack applications that transform raw information into strategic decisions.
           </p>
         </div>
       </div>
